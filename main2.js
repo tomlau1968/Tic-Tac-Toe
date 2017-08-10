@@ -1,24 +1,74 @@
+// addClass hasClass if...else .hide toggle??, array??, indexOf??
 
+//add player 1 and 2
+//turn off all crosses and sqaures ".hind"
+
+// shoud I create another class called "square" and put  crosse and circle inside????? andClass to xCross and oCircle???
+
+//onclick to appear cross or square 'hasClass'
+
+//if 'square' is click 'addClass', so player have clicked and show either circle or cross
+
+/////to win//////
+//use if...else if...
+// list out all conditions
+// 8 conditions to win//
+// 3 rows stright, 3 columns stright and 2 crosses section..
+//if conditions return ture
+//alert you WIN!
+//else alert play again?
+
+
+////logic/////
 let turn = true;
 let player = "x"
-let score = 0;
 
+let oWin = 0
+// let win = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
 ////DOM JS stuff
 $(document).ready(function() {
 $('.divTableCell').on('click', function() {
-    $(this).text(player).addClass(player);
-    let result = youWon();
+    $(this).text(player).addClass(player); //output "X"
+    let result = youWon(); // this shouls be in the last, but this is JS as, you can write the end and place on top
 
-    if (result === 'x' ) {
-      $('.xwin').text("X win");
-      // alert(`Congratulations, ${ result } won!`);
-   } else if (result === 'o') {
-      $('.xwin').text("O win");
-      // alert(`Congratulations, ${ result } won!`);
-   }
+    if (result === 'x' || result === 'o') { // below is
+      alert(`Congratulations, ${ result } won!`);
+    }
+
+  //   if (result === 'x') {
+  //   $(".xwin").text(0+1);
+  //
+  //
+  // } else {
+  //     $(".owin").text("hello");
+      // alert(`Congratulations, ${ result } won!`
 
 
+
+
+
+    //
+
+    // function drawScore() {
+    //     $('.xwin').text('X=');
+    //     ctx.font = "16px Arial";
+    //     ctx.fillStyle = "#0095DD";
+    //     ctx.fillText("Score: "+score, 8, 20);
+    // let score = function() {
+
+
+    // };
+
+
+    //  {
+    //
+    //     $('#checking-balance').text('$' + bank.checking);
+    //
+    //     bank.deposit('checking', amount);
+    //     render();
+    // }
+    //switching player, kind of lie to computer
     // need to do below as change as "x" to "o" than back to "x" again
     if (turn === true) { // start as player "x" as in the logic
       turn = false; //Switch to false
