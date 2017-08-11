@@ -1,4 +1,3 @@
-
 let turn = true;
 let player = "x"
 let score = 0;
@@ -6,17 +5,28 @@ let score = 0;
 
 ////DOM JS stuff
 $(document).ready(function() {
-$('.divTableCell').on('click', function() {
+  $('.btn').on('click', function() {
+    location.reload();
+  })
+
+  let audio = new Audio('Alex_Cohen_-_Good_Old_Times.mp3');
+
+  $('.btn2').on('click', function() {
+    console.log('yes');
+    audio.play();
+  })
+
+  $('.divTableCell').on('click', function() {
     $(this).text(player).addClass(player);
     let result = youWon();
 
-    if (result === 'x' ) {
+    if (result === 'x') {
       $('.xwin').text("X win");
-      // alert(`Congratulations, ${ result } won!`);
-   } else if (result === 'o') {
+
+    } else if (result === 'o') {
       $('.xwin').text("O win");
-      // alert(`Congratulations, ${ result } won!`);
-   }
+
+    }
 
 
     // need to do below as change as "x" to "o" than back to "x" again
@@ -28,6 +38,7 @@ $('.divTableCell').on('click', function() {
       player = "x" //output "X"
     }
   })
+
 
   //below is the engine to check the ressult......
   let youWon = function() {

@@ -23,11 +23,18 @@ div.blueTable {
   margin: 50px auto;
 }
 
+ button {
+   width: 80px;
+   height: 30px;
+   margin: auto;
+   position: relative;
+   left:auto;
+ }
 
 .score {
 /*padding-top: 40px;*/
 height: 100px;
-left: auto;
+/*left: auto;*/
 display: flex;
 }
 
@@ -38,6 +45,79 @@ display: flex;
   font-family: monospace;
 
 }
+
+.button {
+width: 400px;
+/*height: 100px;*/
+margin: auto;
+display: flex;}
+
+
+.btn {
+  margin: auto;
+  width: 100px;
+  height: 40px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 30px;
+  font-family: Courier New;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 2px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+.btn2 {
+  width: 100px;
+  height: 40px;
+  background: #6bd934;
+  background-image: -webkit-linear-gradient(top, #6bd934, #1d632b);
+  background-image: -moz-linear-gradient(top, #6bd934, #1d632b);
+  background-image: -ms-linear-gradient(top, #6bd934, #1d632b);
+  background-image: -o-linear-gradient(top, #6bd934, #1d632b);
+  background-image: linear-gradient(to bottom, #6bd934, #1d632b);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 30px;
+  font-family: Courier New;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 8px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+
+}
+
+.btn2:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
 
 .divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
   border: 1px solid #ffffff;
